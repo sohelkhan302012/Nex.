@@ -115,10 +115,7 @@ h4 {
 header {
   background-color: var(--silver);
 }
-.header-flex {
-  display: flex;
-  justify-content: space-between;
-}
+
 .logo {
   display: inline-block;
   padding: 30px 0;
@@ -135,7 +132,7 @@ header {
 }
 .navigation li a {
   display: inline-block;
-  padding: 30px 10px;
+  padding: 15px 10px;
   color: var(--navigation);
   font-size: 16px;
   font-weight: 500;
@@ -160,6 +157,7 @@ header {
   color: var(--white);
   background-color: var(--primary);
   border-radius: 6px;
+  display: inline-block;
 }
 .cta .cta-primary:hover {
   background-color: var(--secondary);
@@ -171,7 +169,6 @@ header {
   background-color: var(--primary);
   color: var(--white);
   border-radius: 6px;
-  margin: 25px 0;
 }
 #menubar {
   display: none;
@@ -268,6 +265,11 @@ h1 span {
 .section-5-content h2 span {
   color: var(--primary);
   display: block;
+}
+.mobile-icon{
+  position: absolute;
+  top: 10px;
+  right: 30px;
 }
 .section-5-content p {
   padding-top: 8px;
@@ -554,10 +556,7 @@ h1 span {
     width: 720px;
   }
 
-  #menubar {
-    display: flex;
-    align-items: center;
-  }
+ 
   .cta a {
     display: inline-block;
     margin: 0;
@@ -570,9 +569,7 @@ h1 span {
   .foot-h {
     margin: 0 0 24px;
   }
-  .navigation {
-    display: none;
-  }
+ 
 }
 @media (min-width: 1024px) {
   .col-lg-1 {
@@ -610,6 +607,10 @@ h1 span {
   }
   .col-lg-12 {
     width: 100%;
+  }
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
   }
   .container {
     width: 960px;
@@ -661,6 +662,10 @@ h1 span {
   }
   .cta {
     display: block;
+  }
+  #menubar {
+    display: flex;
+    align-items: center;
   }
 }
 @media (min-width: 1200px) {
